@@ -112,3 +112,41 @@ body {
     animation-direction: alternate;
   }
 }
+
+.circle-third {
+  height: 20px;
+  width: 30px;
+  background-color: black;
+  border-radius: 60%;
+  transform-style: preserve-3d;
+  animation: rotate 5s infinite;
+}
+
+.circle-third>div {
+  height: 20px;
+  width: 30px;
+  background-color: black;
+  border-radius: 60%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.circle-third>div:nth-child(1) {
+  transform: rotateY(36deg);
+}
+
+.circle-third>div:nth-child(2) {
+  transform: rotateY(72deg);
+}
+
+.circle-third>div:nth-child(3) {
+  transform: rotateY(108deg);
+}
+
+.circle-third>div:nth-child(4) {
+  transform: rotateY(144deg);
+}
